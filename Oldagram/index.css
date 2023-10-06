@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    display: flex;
+    margin-top: 2%;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 3%;
+}
+
+.oldagramImage {
+width: 24%;
+padding-bottom: 1%;
+
+
+}
+
+.currentUser {
+width: 7%;
+height: 7%;
+border-radius: 50%;
+display: flex;
+margin-top: 1.5%;;
+margin-left: auto;
+margin-right: 1%;
+
+}
+
+.cardHead {
+display: inline-block;
+}
+
+/* .oldagramImage {
+
+} */
+
+
+.postImage {
+    width: 15%;
+    display: block;
+    border-radius: 50%;
+    margin-bottom: -16%;
+}
+
+.mainImage {
+    width: 100%;
+}
+
+.postTitle {
+    font-size: 4vw;
+}
+
+.location {
+    font-size: 3.5vw;
+}
+
+.postTitle, .location {
+    margin-left: 17%;
+}
+
+.heart, .comment, .dm {
+    margin-top: 3%;
+    width: 7%;
+    margin-bottom: 2%;;
+    margin-left: 3%;
+}
+
+.commentsUserName {
+
+display: block;
+position: absolute;
+margin-left: 2%;
+font-weight: bold;
+
+}
+
+.commentsText {
+
+display: block;
+font-size: 2.99vw;
+
+margin-left: 23%;
+
+}
