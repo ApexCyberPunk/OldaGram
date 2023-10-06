@@ -1,7 +1,13 @@
 
 let cardHead = document.querySelector('.cardHead')
+let cardBody = document.querySelector('.cardBody')
+let cardFoot = document.querySelector('.cardFoot')
+
 
 let mContent = posts.map(({name, username, location, avatar, post, comment, likes}) => {
+
+
+    //  post Header
 
     let image = document.createElement("img")
     image.classList.add("postImage")
@@ -14,6 +20,8 @@ let mContent = posts.map(({name, username, location, avatar, post, comment, like
     let place = document.createElement("p")
     place.classList.add("location")
     place.textContent = location
+
+    // end of post header
 
     let mainImage = document.createElement('img')
     mainImage.classList.add('mainImage')
@@ -43,20 +51,27 @@ let mContent = posts.map(({name, username, location, avatar, post, comment, like
     commentEl.classList.add('commentsText')
     commentEl.textContent = comment
 
-
+// head
     let userAvatar = cardHead.appendChild(image)
     let userTitle = cardHead.appendChild(userName)
     let userPlace = cardHead.appendChild(place)
+
+
+    // body
+
     let userImage = cardHead.appendChild(mainImage)
+
+    // interact section
     let userHeart = cardHead.appendChild(heart)
     let appendUserComment = cardHead.appendChild(commentImageEl)
     let userDm = cardHead.appendChild(DmEl)
-    let userNameAp = cardHead.appendChild(userNameEl)
-    // sep
-    let newDiv = document.createElement('div')
-    newDiv.classList.add('newDiv')
 
+    // text comments
+    let userNameAp = cardHead.appendChild(userNameEl)
     let userComment = cardHead.appendChild(commentEl)
+    // sep
+
+
 
 })
 
